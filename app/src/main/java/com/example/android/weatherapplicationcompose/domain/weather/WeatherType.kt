@@ -3,6 +3,7 @@ package com.example.android.weatherapplicationcompose.domain.weather
 import androidx.annotation.DrawableRes
 import com.example.android.weatherapplicationcompose.R
 
+// типы погоды. Функция перевода из номера погоды в ее тип
 sealed class WeatherType(
     val weatherDesc: String,
     @DrawableRes val iconRes: Int
