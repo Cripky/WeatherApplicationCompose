@@ -1,8 +1,8 @@
 package com.example.android.weatherapplicationcompose.data.remote
 
-import com.squareup.moshi.Json
+import com.google.gson.annotations.SerializedName
 
 data class WeatherDto(
-    @field:Json(name = "hourly")
+    @SerializedName("hourly")
     val weatherData: WeatherDataDto
 )
